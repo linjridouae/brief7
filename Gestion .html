@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="only screen and (max-width:700px)" href="Gestion.css" type="text/css" />
+    <link rel="stylesheet" href="Gestion.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> Vente de produits cosmétiques</h1>
+    </header>
+    <section>
+        <form action="">
+            <div id="produit">
+                <input type="text" placeholder="Son nom" id="input">
+                <input type="text" list="marque" placeholder="Selecte une marque" id="input2"> 
+                    <datalist name="" id="marque">
+                        <option value="Dior">
+                        <option value="Avon">
+                        <option value=" Channelle">
+                        <option value="louis vuitton">
+                        <option value="Gucci">
+                        <option value="Prada">
+                    </datalist>
+                    <input type="number" placeholder="Son prix" id="input3">
+                <input type="date" placeholder="mm/dd/yyyy" id="input4"> 
+                <select name="" id="input5">
+                    <option value="">Son type</option>
+                    <option value="hygiène et toilette">hygiène et toilette</option>
+                    <option value="soins esthétiques">soins esthétiques</option>
+                    <option value="produits solaires">produits solaires</option>
+                    <option value="beauté des mains et des pieds">beauté des mains et des pieds</option>
+                    <option value="produits de maquillage">produits de maquillage</option>
+                    <option value="entretien capillaires">entretien capillaires</option>
+                    <option value="parfums">parfums</option>
+                    </select>
+                <div id="radio">
+                    <p> Est ce qui il ya une promotion ?</p>
+                    <label for="Oui"><input type="radio" name="promo" value="Oui" id="Oui">Oui</label>
+                    <label for="Non"><input type="radio" name="promo" value="Non" id="Non">Non</label>
+                </div>
+                <div id="btn">
+                    <input onclick="Add()" type="button" value="Ajoute" id="btn3">
+                    <input onclick="edit()" type="button" value="Modifier" id="btn3"> 
+                </div>
+            </div>  
+        </form>
+    </section>
+    <p id="para"></p>
+    <table id="table">
+        <tr>
+            <th>Nom de produit</th>
+            <th>Marque</th>
+            <th>Prix</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Est ce qui il ya une promotion ?</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
